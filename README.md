@@ -7,9 +7,9 @@ A simple yet powerful To-Do list application where users can add, edit, and dele
 - Add tasks
 - Edit tasks
 - Delete tasks
+- Task create Date
 - Mark tasks as completed
-- Task prioritization
-- Due date management
+
 
 ## Installation
 
