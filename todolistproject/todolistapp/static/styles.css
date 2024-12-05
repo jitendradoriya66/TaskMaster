@@ -1,0 +1,179 @@
+/* Apply a dark theme background */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #1E1E2C; /* Charcoal gray */
+    color: #F0F0F0; /* Light text color for contrast */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+h1 {
+    color: #61dafb; /* Light blue for emphasis */
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #B0B0B0; /* Muted light gray */
+}
+
+/* Task List */
+.list-group-item {
+    background-color: #2A2A3B; /* Slightly lighter gray for contrast */
+    color: #F0F0F0;
+    border: none; /* Remove default border */
+    border-radius: 8px;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.list-group-item:hover {
+    transform: scale(1.02);
+    background-color: #3A3A4B; /* Hover effect */
+}
+
+.task-title {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.task-title.completed {
+    text-decoration: line-through;
+    color: #7D7D8A; /* Subtle muted gray for completed tasks */
+}
+
+/* Buttons */
+.btn-outline-success {
+    color: #4CAF50; /* Green */
+    border-color: #4CAF50;
+}
+
+.btn-outline-success:hover {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.btn-outline-danger {
+    color: #E57373; /* Red */
+    border-color: #E57373;
+}
+
+.btn-outline-danger:hover {
+    background-color: #E57373;
+    color: #fff;
+}
+
+/* Media Queries */
+/* For Tablets (768px and below) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem; /* Adjust font size */
+    }
+
+    p {
+        font-size: 1rem; /* Reduce description size */
+        margin-bottom: 1rem;
+    }
+
+    .list-group-item {
+        padding: 10px 15px; /* Reduce padding for tasks */
+    }
+
+    .btn-outline-success, .btn-outline-danger {
+        padding: 5px 10px; /* Smaller buttons */
+        font-size: 0.9rem;
+    }
+}
+
+/* For Mobile (576px and below) */
+@media (max-width: 576px) {
+    .container {
+        padding: 10px; /* Reduce container padding */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Smaller font for title */
+    }
+
+    p {
+        font-size: 0.9rem; /* Smaller description font */
+    }
+
+    form {
+        flex-direction: column; /* Stack input and button vertically */
+        gap: 10px;
+    }
+
+    form input {
+        width: 100%; /* Full-width input */
+    }
+
+    form button {
+        width: 100%; /* Full-width button */
+    }
+
+    .list-group-item {
+        font-size: 0.9rem; /* Smaller task text */
+        padding: 8px 12px; /* Compact padding */
+    }
+
+    .btn-outline-success, .btn-outline-danger {
+        padding: 4px 8px; /* Smaller buttons */
+        font-size: 0.8rem;
+    }
+}
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Header Styles */
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #5c6bc0;
+}
+
+p {
+    color: #757575;
+}
+
+/* Task Form */
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #5c6bc0;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #3f51b5;
+}
+
+.btn-outline-secondary {
+    border-color: #9e9e9e;
+    color: #9e9e9e;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #e0e0e0;
+}
+
+/* Input field */
+input[type="text"] {
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+/* Update Task Page */
+.update-task-container {
+    margin-top: 50px;
+}
